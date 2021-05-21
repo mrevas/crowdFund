@@ -1,0 +1,17 @@
+.topImage {
+  width: 100%;
+}
+svg {
+  position: absolute;
+}
+.crowdfundLogo {
+  left: 7vw;
+  top: 8vw;
+}
+.hamburger {
+  right: 7vw;
+  top: 8vw;
+}
+.topNav .links {
+  display: none;
+}
