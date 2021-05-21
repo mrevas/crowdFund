@@ -1,17 +1,50 @@
+* {
+  font-family: "Commisioner", sans-serif;
+}
+
 .topImage {
   width: 100%;
 }
+
 svg {
   position: absolute;
 }
+
 .crowdfundLogo {
   left: 7vw;
   top: 8vw;
 }
+
 #hamburger {
   right: 7vw;
   top: 8vw;
 }
-.topNav #links {
-  display: none;
+
+#links a {
+  color: #060606;
+  border-bottom: hsl(0, 0%, 48%) solid 0.2px;
+  width: 98%;
+  font-size: large;
+  font-weight: 500;
+  margin-left: 5px;
+}
+#links a:last-child {
+  margin-top: auto;
+  border: none;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+}
+
+.topNav {
+  display: flex;
+  background-color: #ffffff;
+  margin: auto;
+  width: 85%;
+  height: 25vh;
+  position: relative;
+  bottom: 55vw;
+  border-radius: 15px;
 }
