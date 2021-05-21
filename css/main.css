@@ -8,10 +8,10 @@ svg {
   left: 7vw;
   top: 8vw;
 }
-.hamburger {
+#hamburger {
   right: 7vw;
   top: 8vw;
 }
-.topNav .links {
+.topNav #links {
   display: none;
 }
