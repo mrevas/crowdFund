@@ -1,11 +1,12 @@
-const nav = document.getElementById('links');
+const nav = document.querySelector('.topNav');
 const burger = document.getElementById('burger');
 
 function toggleHamburger() {
-    if (nav.style.display === 'block') {
+    if (nav.style.display === 'flex') {
         nav.style.display = 'none'
-    } else if (nav.style.display === none) {
-        nav.style.display = 'block'}
+    } else {
+        nav.style.display = 'flex'
+    }
 }
 
 burger.addEventListener('click', toggleHamburger)
