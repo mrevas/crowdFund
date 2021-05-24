@@ -69,11 +69,13 @@ svg {
 .topNav {
   display: none;
   background-color: #ffffff;
+  z-index: 2;
   margin: auto;
   width: 85%;
   height: 25vh;
-  position: relative;
-  bottom: 55vw;
+  position: absolute;
+  left: 7.6vw;
+  top: 25vw;
   border-radius: 15px;
   box-shadow: 0px 0px 20px 200vh rgba(0, 0, 0, 0.15);
 }
@@ -109,7 +111,7 @@ svg {
 }
 #topCard {
   position: relative;
-  bottom: 20vw;
+  bottom: 15vw;
   background-color: white;
 }
 
