@@ -1,12 +1,25 @@
-/* base styles */
+/* basic styles */
 html {
   font-family: "Commisioner", sans-serif;
+}
+button:enabled {
+  cursor: pointer;
 }
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.btn {
+  background-color: #3bb4ab;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  align-self: center;
+  padding: 15px;
+}
+
 .topImage {
   width: 100%;
 }
@@ -65,6 +78,7 @@ svg {
   box-shadow: 0px 0px 20px 200vh rgba(0, 0, 0, 0.15);
 }
 
+/* make flex containers and position slash style them */
 .container {
   font-family: "Commissioner", sans-serif;
   display: flex;
@@ -82,12 +96,16 @@ svg {
   font-weight: 600;
   width: 75%;
 }
+
+/* styles for the 1st card */
 #topCard h2 {
   margin: -25px auto 15px;
 }
 
 .container p {
   color: #909090;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
 }
 #topCard {
   position: relative;
@@ -99,8 +117,7 @@ svg {
   position: relative;
   bottom: 13vw;
 }
-.btn {
-}
+
 .btn-group {
   display: flex;
 }
@@ -108,12 +125,6 @@ svg {
 #backProject {
   width: 50vw;
   height: 15vw;
-  background-color: #3bb4ab;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-weight: 700;
-  align-self: center;
 }
 
 #backProject + button {
@@ -125,4 +136,72 @@ svg {
   margin-left: 10px;
   color: #b1b1b1;
   align-self: center;
+}
+
+/* fix margin on second card, increase font size of the numbers, and place a border between numbers */
+
+.figures {
+  margin-bottom: 50px;
+  margin-top: -25px;
+}
+
+.figures h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0;
+}
+
+.figures p {
+  border-bottom: #d8d8d8 solid 1px;
+  padding-bottom: 30px;
+}
+
+.figures p:last-child {
+  border: none;
+}
+
+/* style and position the about section and it's children */
+
+.about div {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.about div.container {
+  width: 60vw;
+  border-color: #dbdbdb;
+  margin-bottom: 30px;
+}
+.about h2 {
+  font-size: 1.25rem;
+}
+
+.about a {
+  text-decoration: none;
+  color: #68b1a2;
+}
+
+.about button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+/* make the numbers larger and bold */
+
+.about span {
+  font-size: 2rem;
+  color: #060606;
+  font-weight: 600;
+}
+
+/* sets the styles for the disabled card */
+
+.disabled,
+.disabled p,
+.disabled a,
+.disabled span {
+  color: #c2bfbf;
+}
+.disabled button {
+  background-color: #e6e6e6;
 }
