@@ -256,3 +256,8 @@ svg {
   color: #909090;
   font-size: 0.9rem;
 }
+
+.radios {
+  transform: scale(1.25);
+  margin-right: 10px;
+}
