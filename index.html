@@ -196,72 +196,122 @@
         </p>
       </div>
       <div>
-        <form>
-          <div class="container">
+        <div class="container modalDivs">
+          <label for="noReward">
             <h3>
-              <input type="radio" name="reward" class="radios" />Pledge with no
-              reward
+              <input
+                id="noReward"
+                value="noReward"
+                type="radio"
+                name="reward"
+                class="radios"
+                onclick="showPledge(0)"
+              />Pledge with no reward
             </h3>
-            <p>
-              Choose to support us without a reward if you simply believe in our
-              project. As a backer, you will be signed up to receive product
-              updates via email.
-            </p>
+          </label>
+          <p>
+            Choose to support us without a reward if you simply believe in our
+            project. As a backer, you will be signed up to receive product
+            updates via email.
+          </p>
 
-            <span>
-              <!-- Selected pledge  start -->
-              Enter your pledge $200 Continue
-              <!-- Selected pledge end -->
-            </span>
+          <div class="enterPledge">
+            <!-- Selected pledge  start -->
+            Enter your pledge <br /><br />
+            <form id="form1">
+              <input type="number" placeholder="$200" />
+              <button  class="btn"type="submit" form="form1">Continue</button>
+            </form>
+            <!-- Selected pledge end -->
           </div>
+        </div>
 
-          <div class="container">
+        <div class="container modalDivs">
+          <label for="BambooStand">
             <h3>
-              <input type="radio" name="reward" class="radios" />Bamboo Stand
+              <input
+                id="BambooStand"
+                value="BambooStand"
+                type="radio"
+                name="reward"
+                class="radios"
+                onclick="showPledge(1)"
+              />Bamboo Stand
             </h3>
-            <p>
-              Pledge $25 or more You get an ergonomic stand made of natural
-              bamboo. You've helped us launch our promotional campaign, and
-              you’ll be added to a special Backer member list. 101 left
-            </p>
+            <a> Pledge $200 or more </a>
+          </label>
+          <p>
+            You get an ergonomic stand made of natural bamboo. You've helped us
+            launch our promotional campaign, and you’ll be added to a special
+            Backer member list. <br /><br />
+            <span>101 </span>left
+          </p>
 
-            <span>
+          <div class="enterPledge">
+            <!-- Selected pledge start -->
+            Enter your pledge <br /><br />
+            <form id="form2">
+              <input type="number" placeholder="$200" />
+              <button  class="btn"type="submit" form="form2">Continue</button>
+            </form>            
+            <!-- Selected pledge end -->
+          </div>
+        </div>
+
+        <div class="container modalDivs">
+          <label for="blackStand">
+            <h3>
+              <input
+                id="blackStand"
+                value="blackStand"
+                type="radio"
+                name="reward"
+                class="radios"
+                onclick="showPledge(2)"
+              />Black Edition Stand
+            </h3>
+            <a>Pledge $200 or more</a>
+          </label>
+
+          <p>
+            You get a Black Special Edition computer stand and a personal thank
+            you. You’ll be added to our Backer member list. Shipping is
+            included. <br /><br />
+            <span>64 </span>left
+          </p>
+
+          <div class="enterPledge">
               <!-- Selected pledge start -->
-              Enter your pledge $25 Continue
+              Enter your pledge <br /><br />
+              <form id="form3">
+                <input type="number" placeholder="$200" />
+                <button class="btn" type="submit" form="form3">Continue</button>
+              </form>
               <!-- Selected pledge end -->
-            </span>
+            </form>
           </div>
+        </div>
 
-          <div class="container">
+        <div class="container modalDivs">
+          <label for="Mahogany">
             <h3>
-              <input type="radio" name="reward" class="radios" />Black Edition
-              Stand
+              <input
+                id="Mahogany"
+                value="blackStand"
+                type="radio"
+                name="reward"
+                class="radios"
+                disabled
+              />Mahogany Edition
             </h3>
-            <p>
-              Pledge $75 or more You get a Black Special Edition computer stand
-              and a personal thank you. You’ll be added to our Backer member
-              list. Shipping is included. 64 left
-            </p>
-
-            <span>
-              <!-- Selected pledge start -->
-              Enter your pledge $75 Continue
-              <!-- Selected pledge end -->
-            </span>
-          </div>
-
-          <div class="container">
-            <h3>
-              <input type="radio" name="reward" class="radios" />Mahogany
-              Special Edition
-            </h3>
-            <p>
-              Pledge $200 or more You get two Special Edition Mahogany stands, a
-              Backer T-Shirt, and a personal thank you. You’ll be added to our
-              Backer member list. Shipping is included. 0 left
-            </p>
-          </div>
-        </form>
+            <a>Pledge $200 or more</a>
+          </label>
+          <p>
+            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
+            personal thank you. You’ll be added to our Backer member list.
+            Shipping is included. <span>0 </span>left
+          </p>
+        </div>
       </div>
     </div>
     <!-- Selection modal end -->
