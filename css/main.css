@@ -216,11 +216,21 @@ svg {
   flex-direction: column;
   background-color: #ffffff;
   width: 85vw;
+  height: 150vw;
+  box-shadow: 0px 0px 20px 500vh rgba(0, 0, 0, 0.15);
   border: solid #efefef 0.5px;
   border-radius: 15px;
   padding: 15px;
-  position: absolute;
-  top: 30vw;
+  padding-bottom: 30px;
+  position: fixed;
+  top: 15vw;
+  overflow-y: auto;
+}
+
+#close-modal {
+  position: relative;
+  left: 75vw;
+  top: 5vw;
 }
 
 .containing {
