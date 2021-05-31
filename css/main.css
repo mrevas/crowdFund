@@ -306,3 +306,19 @@ svg {
   height: 10vw;
   border-radius: 15px;
 }
+
+.modal-success {
+  display: none;
+  position: fixed;
+  top: 30vw;
+  background-color: white;
+}
+.modal-success button {
+  background-color: #3bb4ab;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  align-self: center;
+  padding: 15px;
+}

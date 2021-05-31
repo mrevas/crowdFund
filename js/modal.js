@@ -3,8 +3,10 @@ const closeModal = document.getElementById('close-modal')
 const body = document.getElementById('body')
 const radios = document.getElementsByClassName('radios')
 const enterPledge = document.getElementsByClassName('enterPledge')
-let modal = document.getElementsByClassName('modal-default')
-modal = modal[0];
+const continueBtn = document.querySelector('.modal-default').querySelectorAll('.btn')
+const modal = document.querySelector('.modal-default')
+const successBtn = document.querySelector('#gotIt')
+
 
 
 
@@ -31,4 +33,15 @@ function showPledge(x) {
         }
                 enterPledge[x].style.display = 'block'
 }
+for(i = 0; i < continueBtn.length; i++) {
+        continueBtn[i].addEventListener('click', () => {
+                document.querySelector('.modal-success').style.display = 'block'
+                modal.style.display = 'none'
+        })
+}
 
+
+successBtn.addEventListener('click', () => {
+        document.getElementById('Success').style.display = 'none'
+        body.style.overflow = 'auto'
+})

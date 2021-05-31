@@ -220,7 +220,7 @@
             Enter your pledge <br /><br />
             <form id="form1">
               <input type="number" placeholder="$200" />
-              <button  class="btn"type="submit" form="form1">Continue</button>
+              <button  class="btn" type="submit" form="form1">Continue</button>
             </form>
             <!-- Selected pledge end -->
           </div>
@@ -292,7 +292,7 @@
           </div>
         </div>
 
-        <div class="container modalDivs">
+        <div class="container modalDivs disabled">
           <label for="Mahogany">
             <h3>
               <input
@@ -317,10 +317,12 @@
     <!-- Selection modal end -->
 
     <!-- Success modal start -->
-    <div class="modal-success">
-      Thanks for your support! Your pledge brings us one step closer to sharing
+    <div id="Success" class="modal-success container">
+      <h3>Thanks for your support!</h3><br><br> 
+      <p>Your pledge brings us one step closer to sharing
       Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our
-      campaign is completed. Got it!
+      campaign is completed. </p> <br> 
+      <button id="gotIt">Got it!</button>
     </div>
     <!-- Success modal end -->
     <script src="js/nav.js"></script>
